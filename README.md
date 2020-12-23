@@ -6,3 +6,5 @@ Homeworks
 [Классы](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_2 "Классы")
 
 [Базовый фронтенд](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_4 "Базовый фронтенд")
+- Нажатие на кнопку "Заказать звонок"
+- Панель администрирования - /administration 
