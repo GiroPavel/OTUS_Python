@@ -12,5 +12,5 @@ Homeworks
 [Docker; системы контроля зависимостей](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_5 "Docker; системы контроля зависимостей")
 
 [Flask + SQLAlchemy; docker-compose](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_6 "Flask + SQLAlchemy; docker-compose")
-- Нажатие на кнопку "Заказать звонок" - данные отправляюся в базу
+- Нажатие на кнопку "Заказать звонок" -> всплывающее окно -> заполняем форму -> отправляем -> данные в базe
 - Панель администрирования - /administration - выбрать вкладку "Входящие звонки" - данный подтягиваются из базы
