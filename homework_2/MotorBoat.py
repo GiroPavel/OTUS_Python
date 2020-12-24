@@ -1,4 +1,4 @@
-from OTUS_Python.homework_2.Ship import Ship
+from Ship import Ship
 
 class MotorBoat(Ship):  # Моторная лодка
     WEIGHT = 4000  # максимальный вес для моторных лодок 4 тонны

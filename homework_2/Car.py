@@ -1,5 +1,5 @@
-from OTUS_Python.homework_2.BaseVehicles import BaseVehicle
-from OTUS_Python.homework_2.Exceptions import AddFuelValueError, СoefficientValueError
+from BaseVehicles import BaseVehicle
+from Exceptions import AddFuelValueError, СoefficientValueError
 
 class Car(BaseVehicle):  # Автомобиль
     WHEELS = 4

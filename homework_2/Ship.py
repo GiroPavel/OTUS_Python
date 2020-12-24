@@ -1,4 +1,4 @@
-from OTUS_Python.homework_2.BaseVehicles import BaseVehicle
+from BaseVehicles import BaseVehicle
 
 class Ship(BaseVehicle): # Корабль
     DIS = 5000  # водоизмещение

@@ -1,5 +1,5 @@
-from OTUS_Python.homework_2.Car import Car
-from OTUS_Python.homework_2.Exceptions import MaxrevolutionsValueError
+from Car import Car
+from Exceptions import MaxrevolutionsValueError
 from dataclasses import dataclass
 
 class MotorСar(Car):  # Легковой автомобиль
@@ -16,9 +16,6 @@ class MotorСar(Car):  # Легковой автомобиль
         print(f"Топлива хватит на {dist_to_station} киллометра")
         return dist_to_station
 
-    def add_fuel(self, value):
-        pass
-
     # Подкачать шины
     def add_tire_pressure(self, value, tire_pressure=1.5):
         self.tire_pressure = tire_pressure
@@ -34,7 +31,7 @@ class MotorСar(Car):  # Легковой автомобиль
 
     # Обороты двигателя
     @dataclass
-    class engine:
+    class Engine:
         liters: int
         number_of_pistons: int
         max_revolutions: int
