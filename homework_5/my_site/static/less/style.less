@@ -1,0 +1,1052 @@
+// font settings
+@font-face {
+  font-family: 'ChiftDisplay_bold';
+  src: url('../fonts/ChiftDisplay-Bold.eot');
+  src: url('../fonts/ChiftDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ChiftDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/ChiftDisplay-Bold.woff') format('woff'),
+    url('../fonts/ChiftDisplay-Bold.ttf') format('truetype'),
+    url('../fonts/ChiftDisplay-Bold.svg#ChiftDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroylight';
+  src: url('../fonts/Gilroy-Light.eot');
+  src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Light.woff2') format('woff2'),
+    url('../fonts/Gilroy-Light.woff') format('woff'),
+    url('../fonts/Gilroy-Light.ttf') format('truetype'),
+    url('../fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay_italic';
+  src: url('../fonts/PlayfairDisplay-Italic.eot');
+  src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay_italicbold';
+  src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+  src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '..fonts/PlayfairDisplay_bold';
+  src: url('..fonts/PlayfairDisplay-Bold.eot');
+  src: url('..fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('..fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('..fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('..fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+    url('..fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.chif_bold() {
+  font-family: 'ChiftDisplay_bold', sans-serif;
+}
+
+.lig() {
+  font-family: 'Gilroylight', sans-serif;
+}
+
+.it() {
+  font-family: 'PlayfairDisplay_italic', sans-serif;
+}
+
+.it_bold() {
+  font-family: 'PlayfairDisplay_italicbold', sans-serif;
+}
+
+.bold() {
+  font-family: 'PlayfairDisplay_bold', sans-serif;
+}
+
+// Colors
+@bgtitle: #3A5896;
+@btn-color: #FF0909;
+@text: #000000;
+@light: #fff; //white
+
+// Basic settings
+html {
+  font-size: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// Отключаем обводку элементов в состояние focus
+button,
+a,
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+// Кнопка 
+.button {
+  padding: 1.4rem 3.4rem;
+  width: 16.5rem;
+  min-height: 4rem;
+  border: none;
+  border-radius: 2rem;
+  .lig();
+  font-size: 1.2rem;
+  color: @light;
+  background-image: linear-gradient(-65deg, #ff0909 0%, #ff4115 41%, #ff6a47 43%, #ff0909 99%, #ff0909 100%);
+  background-color: @btn-color;
+  box-shadow: 0 5px 29px rgba(224, 4, 4, 0.3);
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken(@btn-color, 10%);
+  }
+}
+
+.titlelogo() {
+  margin: 1rem 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+// Typography
+section {
+  padding: 10rem 0;
+}
+
+.section-header {
+  &-pig {
+    h2 {
+      padding: 5rem 0 4.5rem;
+      text-transform: uppercase;
+      line-height: 4rem;
+      .chif_bold();
+      font-size: 3.5rem;
+    }
+
+  }
+
+  &-procedure {
+    margin-bottom: 10rem;
+    text-align: center;
+
+    h2 {
+      text-transform: uppercase;
+      line-height: 4rem;
+      font-size: 3.5rem;
+      .chif_bold();
+      color: @text;
+    }
+
+    p {
+      text-transform: none;
+      .it_bold();
+      font-size: 3rem;
+      font-style: italic;
+      color: #3A5896;
+    }
+  }
+
+  &-price {
+    h2 {
+      text-transform: uppercase;
+      line-height: 4rem;
+      .chif_bold();
+      font-size: 3.5rem;
+      color: @text;
+    }
+
+  }
+
+  &-work {
+    margin-bottom: 10rem;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 4rem;
+      .chif_bold();
+      font-size: 3.5rem;
+      color: @text;
+    }
+  }
+
+  &-procedure_2 {
+    margin-bottom: 10rem;
+
+    h2 {
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      line-height: 4rem;
+      font-size: 3.5rem;
+      .chif_bold();
+      color: @text;
+    }
+
+    p {
+      text-transform: none;
+      line-height: 4.3rem;
+      .it_bold();
+      font-size: 3rem;
+      font-style: italic;
+      color: #3A5896;
+    }
+  }
+
+  &-ten_years {
+    h2 {
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      line-height: 4rem;
+      font-size: 4rem;
+      .chif_bold();
+      color: @text;
+    }
+
+    p {
+      text-transform: none;
+      line-height: 4.3rem;
+      .it_bold();
+      font-size: 3rem;
+      font-style: italic;
+      color: #3A5896;
+    }
+  }
+}
+
+// main
+.main {
+  // Главный слайдер
+  // Калькулятор
+  &-calc {
+    position: absolute;
+    // transform: rotate(-10deg);
+    top: 15%;
+    right: 0;
+  }
+
+  &-slider {
+    position: relative;
+    background: url(../img/slider/bg.png) top center no-repeat;
+    background-size: cover;
+
+    &-man {
+      margin-top: -5rem;
+    }
+
+    .slider {
+      padding: 13rem 0 0;
+
+      &-block {
+        text-align: center;
+
+        &-p {
+          .it_bold();
+          font-weight: 900;
+          font-size: 2.6rem;
+        }
+      }
+
+      &-btn {
+        margin-top: 4.5rem;
+        text-align: center;
+      }
+
+      &-button {
+        width: 22.5rem;
+        height: 5.5rem;
+        border-radius: 2.8rem;
+      }
+    }
+  }
+
+  // Главный заголовок
+  &-content {
+    background-color: @bgtitle;
+
+    &-title {
+      position: relative;
+      padding: 5rem 0;
+      text-align: center;
+
+      h1 {
+        .chif_bold();
+        font-weight: 900;
+        font-size: 5rem;
+        color: @light;
+      }
+
+      span {
+        .chif_bold();
+        font-size: 3rem;
+      }
+
+      img {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        z-index: 99;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+    }
+  }
+
+  &-logo-1 {
+    padding: 2rem 0;
+
+    &-title {
+      .titlelogo();
+      .bold();
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
+  &-logo-2 {
+    padding: 3rem 0;
+
+    &-title {
+      .titlelogo();
+      .lig();
+      font-weight: 900;
+    }
+  }
+
+  &-phone {
+    text-align: right;
+
+    &-link {
+      display: inline-block;
+      line-height: 10rem;
+      .chif_bold();
+      font-size: 1.8rem;
+      height: 10rem;
+      color: @text;
+    }
+  }
+}
+
+.header {
+  height: 10rem;
+}
+
+.wrap {
+  display: table;
+  width: 100%;
+  height: 10rem;
+
+  &-block {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+}
+
+// Отключаем обводку слайдера
+.slick-active {
+  outline: none;
+}
+
+// Стрелочки слайдера для главного слайдера
+.arrow {
+  top: 65%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+}
+
+.prev {
+  left: 0;
+  background: url(../img/procedure_2/slider/left.svg) center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0;
+  background: url(../img/procedure_2/slider/right.svg) center no-repeat;
+  background-size: 70%;
+}
+
+// Стрелочки для слайдера - // Cколько длится процедура банкротства?
+.arrow_proc_2 {
+  top: 35%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  position: absolute;
+  z-index: 99;
+  height: 4rem;
+  width: 2rem;
+  border: none;
+}
+
+.prev_proc_2 {
+  left: 0;
+  background: url(../img/procedure_2/slider/left.svg) center no-repeat;
+  background-size: 70%;
+}
+
+.next_proc_2 {
+  right: 0;
+  background: url(../img/procedure_2/slider/right.svg) center no-repeat;
+  background-size: 70%;
+}
+
+// Стрелочки -  // Опыт рвботы более 10 лет 
+
+.arrow_ten_10 {
+  top: 45%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  position: absolute;
+  z-index: 99;
+  height: 4rem;
+  width: 2rem;
+  border: none;
+}
+
+// Поросенок
+.pig {
+  position: relative;
+  // Картинка поросенок
+  &-piggy {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+  } 
+  // Полукруг
+  &-radius {
+    position: relative;
+    left: -10%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50px;
+    background: #eaeeef;
+
+    &:after {
+      position: absolute;
+      top: 40%;
+      left: 65%;
+      display: block;
+      height: 7rem;
+      width: 15px;
+      content: '';
+      background: #fff;
+      -webkit-transform: rotate(50deg);
+              transform: rotate(50deg);
+    }
+  }
+
+  &-img {
+    // margin-left: -1rem;
+  }
+
+  &-p {
+    position: absolute;
+    margin-top: -4rem;
+    .it();
+    color: @text;
+    font-size: 2rem;
+    line-height: 2.7rem;
+
+    strong {
+      .it_bold();
+    }
+  }
+
+  // Форма поросенок 
+  &-form {
+    padding: 3rem;
+    border: 8px solid @bgtitle;
+    text-align: center;
+
+    &-title {
+      h2 {
+        .bold();
+        font-size: 2.2rem;
+        font-weight: 900;
+        line-height: 2.6rem;
+      }
+    }
+
+    &-span {
+      .it();
+      font-size: 1.6rem;
+      color: @text;
+    }
+
+    &-input {
+      margin: 3rem auto 1.5rem;
+      display: block;
+      width: 22.5rem;
+      height: 5.5rem;
+      border-radius: 2.8rem;
+      border: 1px solid #E8E8E8;
+      .lig();
+      font-size: 1.3rem;
+      text-align: center;
+      color: #999999;
+
+      &-label {
+        margin-top: 1.6rem;
+        .lig();
+        font-size: 1.1rem;
+        color: #999999;
+      }
+    }
+
+    &-button {
+      margin: 0 auto 3rem;
+      display: block;
+      width: 22.5rem;
+      height: 5.5rem;
+      border-radius: 2.8rem;
+      font-size: 1.4rem;
+    }
+
+    small {
+      display: block;
+      .lig();
+      font-size: 1.3rem;
+      color: #000;
+    }
+  }
+}
+
+
+// Сложная процедура банкротства?
+.procedure {
+  background-color: #f5f5f5;
+  text-align: left;
+
+  &-block_1 {
+    display: inline-block;
+    padding-bottom: 4rem;
+    color: @text;
+
+    p {
+      margin-top: -5rem;
+      margin-left: 15rem;
+      .it();
+      font-size: 1.8rem;
+
+      strong {
+        .it_bold();
+      }
+    }
+  }
+
+  &-block_2 {
+    display: inline-block;
+    color: @text;
+
+    p {
+      margin-top: -5rem;
+      margin-left: 15rem;
+      .it();
+      font-size: 1.8rem;
+
+      strong {
+        .it_bold();
+      }
+    }
+  }
+}
+
+// Как узнать стоимость услуг?
+
+.price {
+  position: relative;
+  text-align: center;
+  // Фемида
+  &-femida {
+    position: absolute;
+    top: 29.5%;
+    right: 0;
+  }
+  &-form {
+    display: inline-block;
+    margin-top: 7rem;
+    padding: 5rem 6rem;
+    border: 8px solid @bgtitle;
+
+    &-title {
+      h3 {
+        margin-bottom: 2rem;
+        .bold();
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: @text;
+      }
+    }
+
+    &-span {
+      .it_bold();
+      font-size: 1.6rem;
+      color: @text;
+    }
+
+    &-input {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+      width: 22.5rem;
+      height: 5.5rem;
+      border-radius: 2.8rem;
+      border: 1px solid #E8E8E8;
+      .lig();
+      font-size: 1.3rem;
+      text-align: center;
+      color: #999999;
+
+      &-label {
+        margin-top: 1.6rem;
+        .lig();
+        font-size: 1.1rem;
+        color: #999999;
+      }
+    }
+
+    &-button {
+      width: 22.5rem;
+      height: 5.5rem;
+      border-radius: 2.8rem;
+      font-size: 1.4rem;
+    }
+
+    small {
+      display: block;
+      .lig();
+      font-size: 1.3rem;
+      color: #000;
+    }
+  }
+}
+
+// Удобно ли с нами работать?
+
+.work {
+  background-color: #efefef;
+
+  &-block {
+    margin-top: -6rem;
+    margin-left: 5.9rem;
+
+    h3 {
+      .it_bold();
+      font-size: 2rem;
+      margin-bottom: 2.3rem;
+      color: @text;
+    }
+
+    p {
+      font-size: 14px;
+      .lig();
+      color: #666666;
+    }
+  }
+}
+
+// Сколько длится процедура банкротства?
+
+.procedure_2 {
+  position: relative;
+  text-align: center;
+  // Книга 
+  &-book {
+    position: absolute;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    max-width: 20rem;
+    max-height: 20rem;
+    top: -15%;
+    left: 0;
+  }
+
+  &-block_1 {
+    margin-bottom: 6rem;
+  }
+
+  &-circle {
+    display: inline-block;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    background-color: #3a5896;
+  }
+
+  &-slider {
+    margin-top: 8.5rem;
+
+    &-block {
+      h3 {
+        margin-bottom: 5rem;
+        .it_bold();
+        font-size: 2.8rem;
+
+      }
+      p {
+        margin-bottom: 6rem;
+        .lig();
+        font-size: 2rem;
+      }
+    }
+    .button {
+      width: 30rem;
+      height: 6.5rem;
+      box-shadow: 0 5px 29px rgba(228, 4, 4, 0.3);
+      border-radius: 3.3rem;
+    }
+  }
+}
+
+.ten_years {
+  position: relative;
+  background-color: #f5f5f5;
+  text-align: center;
+  // Герб
+  &-eagle {
+    position: absolute;
+    top: -15%;
+    right: 0;
+  }
+  &-slider {
+    margin-top: 8rem;
+    img {
+      margin: 0 auto;
+      width: 26rem;
+      height: 35rem;
+    }
+  }
+  &-cursor {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main {
+    &-calc {
+      display: none;
+    }
+     &-phone {
+      &-link {
+        font-size: 1.4rem;
+      }
+    }
+    &-content {
+      &-title {
+        h1 {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+  .section-header {
+    &-pig {
+      h2 {
+        padding: 1rem 0 4.5rem;
+      }
+    }
+  }
+  .pig{
+    &-piggy {
+      top: 47%;
+      left: 28%;
+    }
+    &-form {
+      padding: 2rem;
+      &-span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .price {
+    &-femida {
+      display: none;
+    }
+  }
+  .procedure_2 {
+    &-book {
+      display: none;
+    }
+  }
+  .ten_years {
+    &-eagle {
+      display: none;
+      top: -19%;
+    }
+  }
+  
+  .prev_proc_2 {
+    left: -4%;
+  }
+  .next_proc_2 {
+    right: -4%;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    &-phone {
+      &-link {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .wrap {
+    margin-top: -2rem;
+    &-block {
+      text-align: center;
+    }
+  }
+  .pig {
+    text-align: left;
+    &-piggy {
+      top: 55%;
+      left: 10%;
+    }
+    &-radius {
+      left: 0;
+    }
+    &-p {
+      margin-left: 4rem;
+    }
+  }
+  .procedure {
+    text-align: center;
+    &-block_1 {
+      padding: 0;
+      img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    &-block_2 {
+      padding: 0;
+      img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .work {
+    text-align: center;
+    img {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    &-block {
+      margin: 0;
+    }
+  }
+  .ten_years {
+    &-eagle {
+      display: none;
+      top: -19%;
+    }
+  }
+  .prev_proc_2 {
+    left: -2.5%;
+  }
+  .next_proc_2 {
+    right: -2.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    &-content {
+      &-title {
+        h1 {
+          font-size: 4.2rem;
+        }
+      }
+    }
+    &-logo-2 {
+      padding: 0;
+    }
+    &-phone {
+      &-link {
+        line-height: 0;
+        font-size: 1.4rem;
+      }
+    }
+    &-slider {
+      &-man {
+        display: none;
+      }
+      .slider {
+        &-block {
+          margin-bottom: 5rem;
+        }
+        padding: 5rem 0 0;
+      }
+    }
+  }
+
+  .header {
+    text-align: center;
+  }
+  .wrap-phone {
+    display: table;
+    width: 100%;
+  }
+  .wrap {
+    margin-top: -7rem;
+    &-block {
+      text-align: center;
+    }
+  }
+
+  .section-header {
+    &-pig {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .pig {
+    &-piggy {
+      display: none;
+    }
+    &-radius {
+      left: 0;
+    }
+    &-p {
+      white-space: nowrap;
+      margin-left: 3rem;
+      font-size: 1.7rem;
+    }
+    &-form {
+      &-input {
+        &-label {
+          font-size: 0.7rem;
+        }
+      }
+      margin-top: 10rem;
+    }
+  }
+
+  .procedure {
+    text-align: center;
+    &-block_1 {
+      p {
+        margin: 3rem 0;
+      }
+    }
+    &-block_2 {
+      p {
+        margin: 3rem 0;
+      }
+    }
+  }
+
+  .pig {
+    &-form {
+      padding: 5rem 3rem;
+      &-input {
+        display: block;
+        width: 100%;
+      }
+      &-button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .price {
+    &-form {
+      padding: 5rem 3rem;
+      &-input {
+        margin-bottom: 1.5rem;
+        display: block;
+        width: 100%;
+        &-label {
+          display: inline;
+          font-size: 0.7rem;
+        }
+      }
+      &-button {
+        display: block;
+        width: 100%;
+      }
+      small {
+        margin: 2rem 0 2rem;
+      }
+    }
+  }
+
+  .section-header-procedure_2 {
+    margin-bottom: 0;
+  }
+  .procedure_2 {
+    &-slider {
+      .button {
+        width: 29rem;
+        box-shadow: 0 0 0 0;
+      }
+    }
+
+    &-block_1 {
+      display: none;
+    }
+
+    &-block_2 {
+      display: none;
+    }
+  }
+  .ten_years {
+    &-eagle {
+      display: none;
+    }
+  }
+
+  .prev {
+    left: -3%;
+    top: 40%
+  }
+  .next {
+    right: -3%;
+    top: 40%;
+  }
+  .prev_proc_2 {
+    top: 50%;
+  }
+  .next_proc_2 {
+    top: 50%;
+  }
+}
