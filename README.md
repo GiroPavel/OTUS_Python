@@ -8,3 +8,5 @@ Homeworks
 [Базовый фронтенд](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_4 "Базовый фронтенд")
 - Нажатие на кнопку "Заказать звонок"
 - Панель администрирования - /administration 
+
+[Docker; системы контроля зависимостей](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_5 "Docker; системы контроля зависимостей")
