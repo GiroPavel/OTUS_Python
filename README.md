@@ -10,3 +10,4 @@ Homeworks
 - Панель администрирования - /administration 
 
 [Docker; системы контроля зависимостей](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_5 "Docker; системы контроля зависимостей")
+[Flask + SQLAlchemy; docker-compose](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_6 "Flask + SQLAlchemy; docker-compose")
