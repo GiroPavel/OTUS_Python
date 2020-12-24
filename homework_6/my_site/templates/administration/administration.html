@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+  <title>Инструкции</title>
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename= 'css/bootstrap.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+
+      <div class="row btn-info">
+
+        <div class="col-md-offset-8 col-md-3">
+
+          <div class="wrap">
+            <div class="wrap-block">
+
+              <div class="dropdown">
+                <button class=" btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="true">
+                  Панель администратора
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="../incomingcall">Входящие звонки</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        {% block incoming %}
+
+        {% endblock %}
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

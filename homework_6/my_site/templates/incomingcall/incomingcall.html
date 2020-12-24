@@ -1,0 +1,32 @@
+{% extends "/administration/administration.html" %}
+
+{% block incoming %}
+
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Удобное время для звонка</th>
+                <th scope="col">Время создания заявки</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for call in form_call %}
+
+              <tr>
+                <th scope="row">{{ call.id }}</th>
+                <td>{{ call.name }}</td>
+                <td>{{ call.phone }}</td>
+                <td>{{ call.time }}</td>
+                <td>{{ call.created_at }}</td>
+              </tr>
+
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+{% endblock %}
