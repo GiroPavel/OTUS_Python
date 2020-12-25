@@ -10,7 +10,7 @@ Homeworks
 - Панель администрирования - /administration 
 
 [Docker; системы контроля зависимостей](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_5 "Docker; системы контроля зависимостей")
-- Заруск проекта:
+- Запуск проекта:
   1. Установить git на локальной машине
   
      https://git-scm.com/book/ru/v2/Введение-Установка-Git
