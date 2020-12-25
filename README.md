@@ -10,6 +10,7 @@ Homeworks
 - Панель администрирования - /administration 
 
 [Docker; системы контроля зависимостей](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_5 "Docker; системы контроля зависимостей")
+Заруск контейнера производится командой "docker run -d -p=5000:5000 name_container"
 
 [Flask + SQLAlchemy; docker-compose](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_6 "Flask + SQLAlchemy; docker-compose")
 - Нажатие на кнопку "Заказать звонок" -> всплывающее окно -> заполняем форму -> отправляем -> данные в базe
