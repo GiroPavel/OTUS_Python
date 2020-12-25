@@ -23,14 +23,14 @@
 
           <div class="col-md-3 col-sm-5 col-xs-12">
             <div class="main-logo-1">
-              <img src="../static/img/header/logo_1.png" alt="Агенство по банкротству">
+              <img src="{{ url_for('static', filename= 'img/header/logo_1.png') }}" alt="Агенство по банкротству">
               <p class="main-logo-1-title">Агенство по <br> банкротству</p>
             </div>
           </div>
 
           <div class="col-md-2 col-sm-4 col-xs-12 ">
             <div class="main-logo-2">
-              <img src="../static/img/header/logo_2.png" alt="Архангельск">
+              <img src="{{ url_for('static', filename= 'img/header/logo_2.png') }}" alt="Архангельск">
               <p class="main-logo-2-title">Архангельск</p>
             </div>
           </div>
@@ -62,7 +62,7 @@
         <div class="col-md-12">
           <div class="main-content-title">
             <h1>БАНКРОТСТВО ФИЗИЧЕСКИХ ЛИЦ <br><span>в г. Архангельск<span></h1>
-            <img src="../static/img/header/corner.png" alt="Уголок">
+            <img src="{{ url_for('static', filename= 'img/header/corner.png') }}" alt="Уголок">
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
 
         <div class="col-md-2 col-sm-2">
           <div class="main-slider-man">
-            <img src="../static/img/slider/mans.png" alt="mans">
+            <img src="{{ url_for('static', filename= 'img/slider/mans.png') }}" alt="mans">
           </div>
         </div>
 
@@ -90,7 +90,7 @@
             </div>
 
             <div class="slider-block">
-              <p class="slider-block-p"">Избавьтесь от долгов <br>совершенно легально!</p>
+              <p class="slider-block-p">Избавьтесь от долгов <br>совершенно легально!</p>
                 <div class=" slider-btn">
                 <button class="button slider-button" type="submit">Подробная консультация</button>
             </div>
@@ -110,7 +110,7 @@
 
   </div>
   <div class="main-calc">
-    <img src="../static/img/header/calc.png" alt="Калькулятор">
+    <img src="{{ url_for('static', filename='img/header/calc.png') }}" alt="Калькулятор">
   </div>
   </div> <!-- Избавьтесь от долгов совершенно легально -->
 
@@ -126,8 +126,8 @@
           <div class="pig-radius">
             <div class="pig-img">
               <picture>
-                <source srcset="../static/img/pig/question.svg" type="image/">
-                <img src="../static/img/pig/question.png" alt="Вопросик">
+                <source srcset="{{ url_for('static', filename= 'img/pig/question.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename='img/pig/question.png') }}" alt="Вопросик">
               </picture>
             </div>
           </div>
@@ -153,7 +153,7 @@
       </div>
     </div>
     <div class="pig-piggy">
-      <img src="../static/img/pig/pig.png" alt="Поросенок">
+      <img src="{{ url_for('static', filename= 'img/pig/pig.png') }}" alt="Поросенок">
     </div>
   </section> <!-- Попали в тяжелое финансовое положение -->
 
@@ -176,8 +176,8 @@
         <div class="col-md-6 col-md-offset-1 col-sm-12">
           <div class="procedure-block_1">
             <picture>
-              <source srcset="../static/img/procedure/1.svg" type="image/">
-              <img src="../static/img/procedure/1.png" alt="">
+              <source srcset="{{ url_for('static', filename= 'img/procedure/1.svg') }}" type="image/">
+              <img src="{{ url_for('static', filename= 'img/procedure/1.png') }}" alt="">
             </picture>
             <p>С вами работает <strong>персональный <br>менеджер по банкротству,</strong> который <br>постоянно в курсе
               этапов вашего дела.</p>
@@ -187,8 +187,8 @@
         <div class="col-md-5 col-md-offset-0 col-sm-12">
           <div class="procedure-block_1">
             <picture>
-              <source srcset="../static/img/procedure/2.svg" type="image/">
-              <img src="../static/img/procedure/2.png" alt="">
+              <source srcset="{{ url_for('static', filename= 'img/procedure/2.svg') }}" type="image/">
+              <img src="{{ url_for('static', filename= 'img/procedure/2.png') }}" alt="">
             </picture>
             <p>Соберем весь пакет документов. <br><strong> нами вы не тратите время и нервы!</strong></p>
           </div>
@@ -200,8 +200,8 @@
           <div class="col-md-6 col-md-offset-1 col-sm-12">
             <div class="procedure-block_2">
               <picture>
-                <source srcset="../static/img/procedure/3.svg" type="image/">
-                <img src="../static/img/procedure/3.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure/3.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure/3.png') }}" alt="">
               </picture>
               <p>Все гарантии мы <strong>прописываем <br> в договоре!</strong></p>
             </div>
@@ -210,8 +210,8 @@
           <div class="col-md-5 col-md-offset-0 col-sm-12">
             <div class="procedure-block_2">
               <picture>
-                <source srcset="../static/img/procedure/4.svg" type="image/">
-                <img src="../static/img/procedure/4.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure/4.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure/4.png') }}" alt="">
               </picture>
               <p>3 опытных финансовых <br>управляющих в команде! <br><strong>Ваше дело в надежных руках!</strong></p>
             </div>
@@ -248,7 +248,7 @@
 
     </div>
     <div class="price-femida">
-      <img src="../static/img/price/femida.png" alt="Фемида">
+      <img src="{{ url_for('static', filename= 'img/price/femida.png') }}" alt="Фемида">
     </div>
 
 
@@ -268,8 +268,8 @@
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <picture>
-            <source srcset="../static/img/work/1.svg" type="image/">
-            <img src="../static/img/work/1.png" alt="">
+            <source srcset="{{ url_for('static', filename= 'img/work/1.svg') }}" type="image/">
+            <img src="{{ url_for('static', filename= 'img/work/1.png') }}" alt="">
             <div class="work-block">
               <h3>Рассрочка до 12 месяцев</h3>
               <p>Наши клиенты зачастую находятся в <br> сложном финансовом положении, поэтому <br>
@@ -279,8 +279,8 @@
         </div>
         <div class="col-md-4 col-sm-12">
           <picture>
-            <source srcset="../static/img/work/2.svg" type="image/">
-            <img src="../static/img/work/2.png" alt="">
+            <source srcset="{{ url_for('static', filename= 'img/work/2.svg') }}" type="image/">
+            <img src="{{ url_for('static', filename= 'img/work/2.png') }}" alt="">
             <div class="work-block">
               <h3>Работаем в выходные</h3>
               <p>У вас плотный график? - Не беда! Наш <br> офис работает по выходным для большего <br> удобства клиентов
@@ -290,8 +290,8 @@
         </div>
         <div class="col-md-4 col-sm-12">
           <picture>
-            <source srcset="../static/img/work/3.svg" type="image/">
-            <img src="../static/img/work/3.png" alt="">
+            <source srcset="{{ url_for('static', filename= 'img/work/3.svg') }}" type="image/">
+            <img src="{{ url_for('static', filename= 'img/work/3.png') }}" alt="">
             <div class="work-block">
               <h3>Оплата по результату</h3>
               <p> Окончательная оплата происходит по <br> завершению процедуры банкротства</p>
@@ -319,32 +319,32 @@
           <div class="col-md-offset-2 col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/1.svg" type="image/">
-                <img src="../static/img/procedure_2/1.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/1.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/1.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/2.svg" type="image/">
-                <img src="../static/img/procedure_2/2.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/2.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/2.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/3.svg" type="image/">
-                <img src="../static/img/procedure_2/3.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/3.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/3.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/4.svg" type="image/">
-                <img src="../static/img/procedure_2/4.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/4.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/4.png') }}" alt="">
               </picture>
             </div>
           </div>
@@ -356,32 +356,32 @@
           <div class="col-md-offset-2 col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/5.svg" type="image/">
-                <img src="../static/img/procedure_2/5.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/5.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/5.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/6.svg" type="image/">
-                <img src="../static/img/procedure_2/6.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/6.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/6.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/7.svg" type="image/">
-                <img src="../static/img/procedure_2/7.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/7.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/7.png') }}" alt="">
               </picture>
             </div>
           </div>
           <div class="col-md-2 col-sm-3">
             <div class="procedure_2-circle">
               <picture>
-                <source srcset="../static/img/procedure_2/8.svg" type="image/">
-                <img src="../static/img/procedure_2/8.png" alt="">
+                <source srcset="{{ url_for('static', filename= 'img/procedure_2/8.svg') }}" type="image/">
+                <img src="{{ url_for('static', filename= 'img/procedure_2/8.png') }}" alt="">
               </picture>
             </div>
           </div>
@@ -420,7 +420,7 @@
 
     </div>
     <div class="procedure_2-book">
-      <img src="../static/img/procedure_2/book.png" alt="Книга">
+      <img src="{{ url_for('static', filename= 'img/procedure_2/book.png') }}" alt="Книга">
     </div>
 
   </section> <!-- Сколько длиться процедура банкротства -->
@@ -439,16 +439,16 @@
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <div class="ten_years-slider">
-            <a class="ten_years-cursor image-popup-vertical-fit" href="../static/img/ten_years/1.jpg"><img src="../static/img/ten_years/1.jpg" alt=""></a>
-            <a class="ten_years-cursor image-popup-vertical-fit" href="../static/img/ten_years/1.jpg"><img src="../static/img/ten_years/1.jpg" alt=""></a>
-            <a class="ten_years-cursor image-popup-vertical-fit" href="../static/img/ten_years/1.jpg"><img src="../static/img/ten_years/1.jpg" alt=""></a>
-            <a class="ten_years-cursor image-popup-vertical-fit" href="../static/img/ten_years/1.jpg"><img src="../static/img/ten_years/1.jpg" alt=""></a>
+            <a class="ten_years-cursor image-popup-vertical-fit" href="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}"><img src="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}" alt=""></a>
+            <a class="ten_years-cursor image-popup-vertical-fit" href="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}"><img src="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}" alt=""></a>
+            <a class="ten_years-cursor image-popup-vertical-fit" href="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}"><img src="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}" alt=""></a>
+            <a class="ten_years-cursor image-popup-vertical-fit" href="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}"><img src="{{ url_for('static', filename= 'img/ten_years/1.jpg') }}" alt=""></a>
           </div>
         </div>
       </div>
     </div>
     <div class="ten_years-eagle">
-      <img src="../static/img/ten_years/eagle.png" alt="Герб">
+      <img src="{{ url_for('static', filename= 'img/ten_years/eagle.png') }}" alt="Герб">
     </div>
   </section> <!-- Опыт работы более 10 лет -->
 
