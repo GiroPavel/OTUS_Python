@@ -55,4 +55,4 @@ Homeworks
 ListView - Вкладка корзина - > book/templates/your_book.html
 DeteilView - находится в панели администрирования - /administrations/applications -> нажимаем на Имя -> main/templates/one_application.html
          
-         
+[ПРОЕКТНАЯ РАБОТА](https://github.com/GiroPavel/OTUS_Python/tree/master/Project "ПРОЕКТНАЯ РАБОТА")
