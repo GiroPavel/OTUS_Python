@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Контакты
+{% endblock %}
+
+{% block main %}
+
+            <!-- Contact Start -->
+            <div class="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Контакты</p>
+                        <h2>Отправьте нам сообщение</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+
+                                <form method="post">
+
+                                    <div class="offset-2 col-md-8" >
+                                        {% csrf_token %}
+                                        {{ form.as_p }}
+                                    </div>
+
+                                    <div class="offset-2 col-md-2" >
+                                        <button type="submit" class="btn btn-block">Отправить</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+
+{% endblock %}
+
+{% block footer %}
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <div class="footer-contact">
+                                <h2>Как с нами связаться</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Санкт-Петербург, ул. Куйбышева 44</p>
+                                <p><i class="fa fa-phone-alt"></i>+7 921 000 00 00 </p>
+                                <p><i class="fa fa-envelope"></i>cleanupotus@gmail.com</p>
+                                <div class="footer-social">
+                                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Полезные ссылки</h2>
+                                <a href="/about">О нас</a>
+                                <a href="/service">Услуги</a>
+                                <a href="/project">Проекты</a>
+                                <a href="/contact">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="footer-form">
+                                <h2>Оставить заявку</h2>
+                                <input class="form-control" placeholder="Email">
+                                <button class="btn">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+{% endblock %}
