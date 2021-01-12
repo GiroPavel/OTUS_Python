@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Удалить бронирование
+{% endblock %}
+
+{% block main %}
+
+            <!-- Book Start -->
+            <div class="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Удалить бронирование</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                     <table class="table">
+                                          <thead class="thead-light">
+                                                <tr>
+
+
+                                                      <th scope="col">Услуга</th>
+                                                      <th scope="col">Тип уборки</th>
+                                                      <th scope="col">Комната</th>
+                                                      <th scope="col">Количество комнат</th>
+                                                      <th scope="col"></th>
+
+
+
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+
+                                                      <td>{{ object.place }}</td>
+                                                      <td>{{ object.type_clean }}</td>
+                                                      <td>{{ object.type_rooms }}</td>
+
+                                                      <td>
+
+                                                          <select class="custom-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                          </select>
+
+                                                      </td>
+
+                                                      <td>
+
+                                                          <form method="post">
+                                                                {% csrf_token %}
+                                                                <button type="submit" class="btn-danger btn-sm" style="border: none">Да</button>
+                                                          </form>
+
+                                                      </td>
+
+                                                </tr>
+
+                                          </tbody>
+                                     </table>
+
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Book End -->
+
+{% endblock %}
