@@ -1,0 +1,79 @@
+{% extends 'main/administrations.html' %}
+
+{% load static %}
+
+{% block title %}
+Одна заявка
+{% endblock %}
+
+{% block applications %}
+
+            <!-- Book Start -->
+            <div class="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Удалить контакт "{{ object.name }}"</p>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                    <strong style="margin-right: 20px; margin-bottom: 30px">Имя:</strong> {{ object.name }}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                    <strong style="margin-right: 20px; margin-bottom: 30px">Телефон:</strong> {{ object.phone }}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                    <strong style="margin-right: 20px; margin-bottom: 30px">Услуга:</strong> {{ object.service }}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                    <strong style="margin-right: 20px; margin-bottom: 30px">Комментарий:</strong> {{ object.comment }}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <div class="form-row">
+
+                                    <strong style="margin-right: 20px">Дата:</strong> {{ object.create|date }}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <form method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="btn-danger btn-sm" style="border: none; margin-top: 20px; margin-left: 10px">Да</button>
+                        </form>
+
+                   </div>
+                </div>
+            </div>
+            <!-- Book End -->
+
+{% endblock %}
