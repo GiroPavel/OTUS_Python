@@ -59,3 +59,36 @@ DeteilView - находится в панели администрировани
 __________________
 
 [ПРОЕКТНАЯ РАБОТА](https://github.com/GiroPavel/OTUS_Python/tree/master/Project "ПРОЕКТНАЯ РАБОТА")
+
+Тема -  мини сайт “Оказание услуг по уборке“- домов, коттеджей, квартир, офисов
+
+Технологии - Django, Celery, Redis, Bootstrap(v4.4.1), Jquery(v3.4.1)
+
+Плагины Jquery - easing, isotope, lightbox, owlcarousel
+
+Запуск проекта:
+
+1. Установить git на локальной машине
+  
+   https://git-scm.com/book/ru/v2/Введение-Установка-Git
+     
+2. Склонировать репозиторий в любую директорию
+
+   git clone https://github.com/GiroPavel/OTUS_Python/tree/master/homework_7_8_django/clean_up
+   
+3. Зайти в директорию clean_up и установить зависимости
+
+   pip install -r requirements.txt
+   
+4. Запустить проект из дериктории clean_up
+
+   python manage.py runserver
+   
+5. Для проверки почты
+   - запустить Redis на локальной машине или в контейнере
+   - Чтобы селери выполнял наши задачи описанные в celery.py, нам нужно запустить воркер из директории clean_up
+   
+     celery -A clean_up worker -l info
+     
+   - отправить почту - вкладка "Контакты" 
+   - посмотреть лог в директории clean_app/app_messages
