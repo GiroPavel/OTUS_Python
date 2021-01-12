@@ -45,4 +45,4 @@ Homeworks
 - Нажатие на кнопку "Заказать звонок" -> всплывающее окно -> заполняем форму -> отправляем -> данные в базe
 - Панель администрирования - /administration - выбрать вкладку "Входящие звонки" - данный подтягиваются из базы
 
-7_8. [Django ORM, django-debug-toolbar + More Django]("https://github.com/GiroPavel/OTUS_Python/tree/master/homework_7_8_django/clean_up")
+7_8. [Django ORM, django-debug-toolbar + More Django](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_7_8_django/clean_up "Django ORM, django-debug-toolbar + More Django")
