@@ -60,13 +60,13 @@ __________________
 
 [ПРОЕКТНАЯ РАБОТА](https://github.com/GiroPavel/OTUS_Python/tree/master/Project "ПРОЕКТНАЯ РАБОТА")
 
-Тема -  мини сайт “Оказание услуг по уборке“- домов, коттеджей, квартир, офисов
+***Тема*** -  мини сайт “Оказание услуг по уборке“- домов, коттеджей, квартир, офисов
 
-Технологии - Django, Celery, Redis, Bootstrap(v4.4.1), Jquery(v3.4.1)
+***Технологии*** - Django, Celery, Redis, Bootstrap(v4.4.1), Jquery(v3.4.1)
 
-Плагины Jquery - easing, isotope, lightbox, owlcarousel
+***Плагины Jquery*** - easing, isotope, lightbox, owlcarousel
 
-Запуск проекта:
+***Запуск проекта:***
 
 1. Установить git на локальной машине
   
