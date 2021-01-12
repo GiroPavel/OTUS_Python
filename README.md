@@ -46,3 +46,13 @@ Homeworks
 - Панель администрирования - /administration - выбрать вкладку "Входящие звонки" - данный подтягиваются из базы
 
 7_8. [Django ORM, django-debug-toolbar + More Django](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_7_8_django/clean_up "Django ORM, django-debug-toolbar + More Django")
+
+Проект - мини сайт “Оказание услуг по уборке“- домов, коттеджей, квартир, офисов
+
+Модели - main/models.py - > Application
+         book/models.py - > Clean
+         
+ListView - Вкладка корзина - > book/templates/your_book.html
+DeteilView - находится в панели администрирования - /administrations/applications -> нажимаем на Имя -> main/templates/one_application.html
+         
+         
