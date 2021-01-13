@@ -62,7 +62,7 @@ __________________
 
 ***Тема*** -  мини сайт “Оказание услуг по уборке“- домов, коттеджей, квартир, офисов
 
-***Технологии*** - Django, Celery, Redis, Bootstrap(v4.4.1), Jquery(v3.4.1)
+***Технологии*** - Django, Celery, Redis, Bootstrap(v4.4.1), Jquery(v3.4.1б), SQLlite
 
 ***Плагины Jquery*** - easing, isotope, lightbox, owlcarousel
 
