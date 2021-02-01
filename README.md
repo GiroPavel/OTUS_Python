@@ -5,6 +5,8 @@ Homeworks
 
 2. [Классы](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_2 "Классы")
 
+3  [Асинхронная работа с БД]
+
 4. [Базовый фронтенд](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_4 "Базовый фронтенд")
 - Нажатие на кнопку "Заказать звонок"
 - Панель администрирования - /administration 
