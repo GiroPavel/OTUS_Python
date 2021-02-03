@@ -5,7 +5,7 @@ Homeworks
 
 2. [Классы](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_2 "Классы")
 
-3. [Асинхронная работа с БД](https://github.com/GiroPavel/OTUS_Python/blob/master/homework_3/homework_3.py "Асинхронная работа с БД")
+3. [Асинхронная работа с БД](https://github.com/GiroPavel/OTUS_Python/blob/master/homework_3/main.py "Асинхронная работа с БД")
 
 4. [Базовый фронтенд](https://github.com/GiroPavel/OTUS_Python/tree/master/homework_4 "Базовый фронтенд")
 - Нажатие на кнопку "Заказать звонок"
