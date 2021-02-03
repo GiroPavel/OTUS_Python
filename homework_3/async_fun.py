@@ -4,6 +4,8 @@ import asyncpg
 from dataclasses import dataclass
 from aiohttp import ClientSession
 
+from models_db import JsonPlaceholderUser, JsonPlaceholderPost, Session
+
 
 @dataclass
 class Service:
@@ -44,9 +46,10 @@ async def fetch_list_users(service: Service) -> str:
     )
 
     for d in group_users:
-        await conn.execute(
-            "INSERT INTO users VALUES ($1, $2, $3)", int(d[0]), str(d[1]), str(d[2])
-        )
+        session = Session()
+        u = JsonPlaceholderUser(id=d[0], username=d[1], email=d[2])
+        session.add(u)
+        session.commit()
 
     await conn.close()
 
@@ -74,9 +77,10 @@ async def fetch_list_posts(service: Service) -> str:
     )
 
     for d in group_posts:
-        await conn.execute(
-            "INSERT INTO posts VALUES ($1, $2, $3)", int(d[0]), str(d[1]), str(d[2])
-        )
+        session = Session()
+        p = JsonPlaceholderPost(id=d[0], title=d[1], body=d[2])
+        session.add(p)
+        session.commit()
 
     await conn.close()
 
