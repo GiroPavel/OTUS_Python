@@ -24,10 +24,11 @@ Homeworks
   3. Склонировать репозиторий в любую директорию
   
      git clone https://github.com/GiroPavel/OTUS_Python.git
-     
+     '''
   4. Зайти в директорию с проектом 
   
      cd homework_5
+     
      
   5. Выполнить команду
   
